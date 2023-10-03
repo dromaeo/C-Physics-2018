@@ -1,0 +1,41 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+int main(){
+int n=0;
+double v[n];
+ string filename;
+ cout << "Inserire il nome del file" << endl;
+ cin >> filename;
+ ifstream ifile;
+ ifile.open(filename.c_str());
+ if (!ifile.good() ){
+   cerr << "Errore nell'apertura del file" << endl;
+   return 1;
+ }
+
+ while (ifile < n){
+   ifile >> v[i];
+   n++;
+ }
+
+ /*
+ ifstream file1("vettori.dat");
+for (int i=0;i<n;i++){
+ file1 >> v[i];
+ }
+
+ 
+//somma 
+double sum=0;
+for (int i=0; i<n; i++){
+  sum = sum + v[i];}
+ cout  << "Dati i valori inseriti in vettori.dat si ha che: "
+      << endl << "La somma vale " << sum << endl;
+ */
+
+	
+  
+ return 0;
+}
